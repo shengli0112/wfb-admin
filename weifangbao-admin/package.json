@@ -1,0 +1,89 @@
+{
+  "name": "security-enterprise-admin",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:uat": "vue-cli-service build --mode production.uat",
+    "build:dev": "vue-cli-service build --mode production.dev",
+    "lint": "vue-cli-service lint",
+    "et": "node_modules/.bin/et",
+    "et:init": "node_modules/.bin/et -i",
+    "et:list": "gulp themes"
+  },
+  "dependencies": {
+    "axios": "^0.18.1",
+    "babel-plugin-component": "^1.1.1",
+    "clipboard": "^2.0.4",
+    "element-theme": "^2.0.1",
+    "element-theme-chalk": "^2.11.1",
+    "element-ui": "2.10.0",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-load-plugins": "^1.6.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "js-cookie": "^2.2.0",
+    "lodash": "^4.17.15",
+    "qrcode": "^1.4.1",
+    "qs": "^6.7.0",
+    "quill": "^1.3.6",
+    "sass-loader": "^7.1.0",
+    "screenfull": "^3.3.3",
+    "svg-sprite-loader": "^4.1.6",
+    "vue": "^2.6.10",
+    "vue-baidu-map": "^0.21.22",
+    "vue-i18n": "^8.12.0",
+    "vue-router": "^3.0.7",
+    "vuex": "^3.1.1"
+  },
+  "devDependencies": {
+    "@vue/cli": "^3.9.3",
+    "@vue/cli-plugin-babel": "^3.9.2",
+    "@vue/cli-plugin-eslint": "^3.9.2",
+    "@vue/cli-service": "^3.9.3",
+    "@vue/eslint-config-standard": "^3.0.5",
+    "gulp-ftp": "^1.1.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "engines": {
+    "node": ">= 8.11.1",
+    "npm": ">= 5.6.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ],
+  "element-theme": {
+    "config": "./src/element-ui/theme-variables.scss",
+    "out": "./src/element-ui/theme",
+    "minimize": true,
+    "browsers": [
+      "> 1%",
+      "last 2 versions",
+      "not ie <= 10"
+    ]
+  }
+}
